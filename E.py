@@ -11,9 +11,9 @@ from operator import itemgetter
 from typing import Optional
 from F import my_decorator
 
-
-MAIN_TEXT = """o4en  ogo ogo топот dlinnoe , , , , o4en predlojenie"""
-
+# Можно вставить свои данные
+MAIN_TEXT = """o4en  ogo ogo топот dlinnoe , , , , o4en predlojenie""" 
+print(f'\n\n\n\n{"#"*20}E.py:{"#"*20}')
 
 @my_decorator
 class TextClass:  # (metaclass=TimeClass):
@@ -77,3 +77,5 @@ print(txt_cls.max_len())
 print(txt_cls.most_freq())
 print(txt_cls.count_chars())
 print(txt_cls.palindrom())
+
+print(f'{"#"*40}')

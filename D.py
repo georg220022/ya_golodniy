@@ -10,6 +10,7 @@ LIMIT = asyncio.Semaphore(100)
 TOTAL_REQUEST = 100
 count = [1]
 
+print(f'\n\n\n\n{"#"*20}D.py:{"#"*20}')
 
 def my_decors(func):
     @wraps(func)
@@ -52,5 +53,5 @@ async def run(url):
         )
 
 
-if __name__ == "__main__":
-    asyncio.run(run(URL))
+asyncio.run(run(URL))
+print(f'{"#"*40}')

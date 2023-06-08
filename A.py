@@ -6,7 +6,7 @@
     Стоит рассмотреть защиту от ссылок "вне формата".
 """
 import re
-
+print(f'\n\n\n\n{"#"*20}A.py:{"#"*20}')
 # from F import TimeClass
 
 
@@ -17,6 +17,7 @@ MAX_LEN_NAME = 100
 BAD_FIRST_SYMBOL_IN_NAME = "."
 REG = r"github\.com\/\w+\/([\w.-]+)"  # Спасибо ChatGPT за регулярку =)
 
+# Можно вставить свои данные
 repo_list = [
     "http://github.com/georg220022/.wfeearg/",  # 1
     "http://github.com/georg220022/wefefg./",  # 2
@@ -28,13 +29,6 @@ repo_list = [
     "http://github.com/georg220022/_-_-_/12rewefe3",  # 8
     "https://github.com/georg220022/restaurant_menu_api/123123rwqef",  # 9
     "http://github.com/georg220022/resta-u.rant_menu_api/ewfwef",  # 10
-    "https://www.github.com/georg220022/restaurant_menu_api",  # 11
-    "http://www.github.com/georg220022/restaura...nt_menu_api",  # 12
-    "github.com/georg220022/restaurant_menu_api1",  # 13
-    "pornhub.com/georg220022/restaurant_menu_api",  # 14
-    "",  # 15
-    "2345678",  # 16
-    "github.com/",  # 17
 ]
 
 
@@ -60,3 +54,4 @@ def get_name_repo(repo_list: list) -> None:
         print(BAD_MSG, id_ + 1)
 
 get_name_repo(repo_list)
+print(f'{"#"*40}')
