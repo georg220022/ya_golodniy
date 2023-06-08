@@ -1,4 +1,5 @@
 """
+ЗАДАНИЕ:
 Написать класс, принимающий на вход текст.
 Один метод класса должен выводить в консоль самое длинное слово в тексте.
 Второй метод - самое часто встречающееся слово.
@@ -8,13 +9,14 @@
 import string
 from operator import itemgetter
 from typing import Optional
-from F import TimeClass
+from F import my_decorator
 
 
-MAIN_TEXT = """o4en  ogo ogo ava dlinnoe , , , , o4en predlojenie"""
+MAIN_TEXT = """o4en  ogo ogo топот dlinnoe , , , , o4en predlojenie"""
 
 
-class TextClass(metaclass=TimeClass):
+@my_decorator
+class TextClass:  # (metaclass=TimeClass):
 
     """
     Класс для работы со строками.
